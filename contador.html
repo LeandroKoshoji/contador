@@ -1,4 +1,49 @@
-Contador
-Reiniciar
-Faltam
-Dias Horas Minutos Segundos
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-area">
+                <h1>Contador</h1>
+                <a href="index.html" class="reset-button">Reiniciar</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content-wrapper counter-area">
+                <h1 style="color: #191A18;">Faltam</h1>
+                <div class="counters-containers">
+                    <div class="counter-conteiner">
+                        <span class="number-container" data-js="days">0</span>
+                        <span class="text-container">Dias</span>
+                    </div>
+                    <div class="counter-conteiner">
+                        <span class="number-container" data-js="hours">0</span>
+                        <span class="text-container">Horas</span>
+                    </div>
+                    <div class="counter-conteiner">
+                        <span class="number-container" data-js="minutes">0</span>
+                        <span class="text-container">Minutos</span>
+                    </div>
+                    <div class="counter-conteiner">
+                        <span class="number-container" data-js="seconds">0</span>
+                        <span class="text-container">Segundos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

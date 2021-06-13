@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    max-width: 100%;
+    min-height: 100vh;
+    
+}
+
+.container {
+    width: min(90%, 100rem);
+    margin: auto;
+}
+
+/* index.html */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-wrapper > * {
+    margin-bottom: 1rem;
+}
+
+.content-wrapper h1 {
+    color: #21EB00;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 700;
+}
+
+.content-wrapper h3 {
+    color: #ffffff;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 700;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form .date {
+    border: 0;
+    outline: 0;
+    background-color: #191A18;
+    color: #fff;
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.submit-button {
+    border: 0;
+    outline: none;
+    padding: 1rem 2rem;
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #21EB00;
+    color: #000;
+}
+
+/* contador.html */
+
+.content-wrapper.counter-area {
+    height: calc(100vh - 101px);
+}
+
+.header-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.header-area h1 {
+    color: #21EB00;
+    font-size: clamp(2rem, 3vw, 4rem);
+    font-weight: 700;
+}
+
+.reset-button {
+    text-decoration: none;
+    border: 0;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #21EB00;
+    color: #000;
+}
+
+.counters-containers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    flex-basis: 100%;
+    flex-shrink: 1;
+}
+
+@media (max-width: 320px) {
+    .counters-containers{
+        flex-direction: column;
+    }
+
+    .header-area {
+        flex-direction: column;
+        
+    }
+}
+
+.number-container {
+    font-size: clamp(3rem, 4vw, 5rem);
+}
+
+.text-container {
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    color: #21EB00;
+}

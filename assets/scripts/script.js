@@ -5,7 +5,6 @@ const hoursContainer = document.querySelector('[data-js="hours"]')
 const minutesContainer = document.querySelector('[data-js="minutes"]')
 const secondsContainer = document.querySelector('[data-js="seconds"]')
 
-
 const insertDateIntoDOM = (days, hours, minutes, seconds) => {
     daysContainer.textContent = days < 10 ? `0${days}` : days
     hoursContainer.textContent = hours < 10 ? `0${hours}` : hours

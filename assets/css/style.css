@@ -119,6 +119,7 @@ form .date {
     flex-shrink: 1;
 }
 
+
 @media (max-width: 320px) {
     .counters-containers{
         flex-direction: column;
